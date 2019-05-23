@@ -1,0 +1,42 @@
+
+<head>
+    <title>Conway's Game of Life</title>
+    <meta charset="UTF-8">
+</head>
+
+<body style="background-color:rgb(0, 204, 255);">
+    <style>
+        * {
+            font-family: "Arial" !important;
+        }
+        canvas {
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        #wrapper {
+            display: block;
+            position: relative;
+            margin-left: 10px;
+        }
+    </style>
+        <div style="text-align:center left;">
+            Generation Speed: <input type="range" min="-750" max="-15" value="15" id="timeSlider">
+            <span></span>
+        </div>
+    <span id="genCount" style="display:inline-block; width:175px;">
+        Generation: 0                 
+    </span>
+    <button id="pauseButton" type="button" value="go" onclick="pauseToggle(this)">pause</button>
+    <p style="position:absolute;">
+        The canvas is interactive! <br> Try clicking on a cell to bring it to life.
+    </p>
+    <div id="wrapper">
+        <canvas id="theCanvas" width="1000" height="900" style="border:1px solid #000000;">
+            <script src="LifeScript.js"></script>
+        </canvas>
+    </div>
+</body>

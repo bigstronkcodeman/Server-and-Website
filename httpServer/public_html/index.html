@@ -1,0 +1,138 @@
+
+<!doctype html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <style>
+        html {
+            min-height: 100%;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100%;
+            background-image: linear-gradient(to bottom right, mediumturquoise, olivedrab);
+        }
+        .navbar {
+            /* overflow: hidden; */
+            background-color: rgb(174, 174, 174);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            border-bottom: 1px solid black;
+        }
+
+        .navbar .dropdown-content a:hover {
+            background: #ddd;
+            color: black;
+        }
+
+        .main {
+            margin-top: 30px;
+        }
+
+        .dropdown {
+            position: relative;
+            float: right;
+        }
+
+        .dropDwnBtn {
+            background-color: rgb(194, 194, 194);
+            color: black;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .dropdownContent {
+            display: none;
+            position: absolute;
+            background-color: rgb(194, 194, 194);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            right: 0;
+        }
+
+        .dropdownContent a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            font-family: "Verdana", "Times New Roman";
+            font-size: 14px;
+            display: block;
+        }
+
+        .dropdownContent a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdownContent {
+            display: block;
+        }
+
+        .dropdown:hover .dropDwnBtn {
+            background-color: #c7c7c7;
+        }
+
+        .stroked:hover {
+            left: 0;
+            color: #fff;
+            text-shadow: -1px -1px 0 cornflowerblue,
+                          1px -1px 0 cornflowerblue,
+                         -1px 1px 0 cornflowerblue,
+                          1px 1px 0 cornflowerblue; 
+        }
+
+        .aboutMe {
+            text-indent: 2em;
+            padding-left: 15px;
+            width: 500px;
+            font-family: Verdana, Times, 'Times New Roman';
+            size: 4em;
+            margin-top: 10px;
+        }
+    </style>
+    <div class="page">
+        <div class="navbar"> 
+            <div style="text-align:left; left:0; padding-top:10px; position:absolute; color:black;">
+                <a href="./index.html" style="text-decoration:none; color:black;">
+                    <font class="stroked" size="5" face="verdana">
+                        <strong>Phillip Boudreau</strong>
+                    </font>
+                </a>
+            </div>
+            <div class="dropdown">
+                <button class="dropDwnBtn">Links</button>
+                <div class="dropdownContent">
+                    <a target="_blank" href="https://github.com/bigstronkcodeman">My Github</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropDwnBtn">My Web Creations</button>
+                <div class="dropdownContent">
+                    <a target="_blank" href="./Life.html">Conway's Game of Life</a>
+                </div>
+            </div>
+        </div>
+        
+        <h1 style="font-family:Verdana, Times, 'Times New Roman'; padding-top:50px; margin-bottom:0px;">
+            <b>&nbsp<u>A little about me:</u></b>
+        </h1>
+        <p class="aboutMe">
+            I am a junior at the University of Arkansas studying Computer Science. I started programming
+            my second year of college and it has since become one of my favorite pastimes. This is just
+            a personal site for me to have where I can keep an organized directory of all the little
+            web programs I have written, as well as those to come. 
+        </p>
+    </div>
+</body>
+
+</html>
